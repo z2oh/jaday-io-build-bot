@@ -1,0 +1,9 @@
+jaday-io-builder:
+  container_name: jaday-io-builder 
+  build: .
+  environment:
+    GIT_USERNAME: 'username_here'
+    GIT_PASSWORD: 'password_here'
+    GIT_EMAIL: 'email_here'
+  volumes:
+    - "./scripts:/scripts"
